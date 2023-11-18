@@ -1,0 +1,31 @@
+<div id="back">
+    <canvas id="canvas" class="canvas-back"></canvas>
+    <div class="backRight">    
+    </div>
+    <div class="backLeft">
+    </div>
+  </div>
+  
+  <div id="slideBox">
+    <div class="topLayer">
+      <div class="right">
+        <div class="content">
+          <h2>Login</h2>
+          <form id="form-login" method="post" onsubmit="return false;">
+            <div class="form-element form-stack">
+              <label for="username-login" class="form-label">Username</label>
+              <input id="username-login" type="text" [(ngModel)]="username" name="username">
+            </div>
+            <div class="form-element form-stack">
+              <label for="password-login" class="form-label">Password</label>
+              <input id="password-login" type="password" [(ngModel)]="password" name="password">
+            </div>
+            <div class="form-element form-submit">
+              <button id="logIn" class="login"  name="login" (click)="onSubmit()">Log In</button>
+              <button id="goRight" class="login off" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
